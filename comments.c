@@ -48,12 +48,12 @@ void comments(int good, int bad) {
     char *text = "assert(bad==6)";
     char *t= "assert(bad==7)"; assert(good==7);
 
-    assert(post_comment_changes);  // comment
-    assert(mid_comment_changes /*comment*/ == 1);  
-    assert(comment_added == 1);
+    assert(post_comment_changes);  // different comment
+    assert(mid_comment_changes /*different comment*/ == 1);  
+    assert(comment_added /* new comment */ == 1);
 
     // This is about spaces, but that's similar to comment effects.
-    assert(good == not);
+    assert(good==not);
 
 }
 

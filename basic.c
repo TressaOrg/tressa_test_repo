@@ -16,23 +16,22 @@
 
 void main() {
     assert(a);
-    assert(to_delete);
     assert(c);
 
-    assert(to_change);
+    assert(changed);
 
     assert(d);
-    assert(to_change_surrounded);
+    assert(changed_surrounded);
     assert(f);
 
-    assert(to_change == b ||
+    assert(changed == b ||
             (c != d &&
              e == f));
     assert(a==b ||
             (c != d &&
              e == no_change));
     assert(a == b ||
-            (c != to_change &&
+            (c != changed &&
              e == f));
 
     big_assert_bob(bad);
@@ -42,6 +41,8 @@ void main() {
         (
          x
         );
+
+    assert(extra_add1);
 
 }
 
@@ -60,7 +61,7 @@ void main() {
  */
 
 assert(outside);
-
+assert(extra_add2);
 
 /*This is just more comment again!
  * It is included to ensure that
