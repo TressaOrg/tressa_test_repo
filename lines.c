@@ -28,18 +28,18 @@ void function() {
     // multiple asserts per line
 
     assert(no_change1); assert(no_change2);
-    assert(to_change==1); assert(to_change==2);
-    assert(no_change3); assert(to_change==3);
-    assert(to_change==4); assert(no_change4);
+    assert(changed==1); assert(changed==2);
+    assert(no_change3); assert(changed==3);
+    assert(changed==4); assert(no_change4);
 
-    assert(no_change5); assert(to_delete1);
-    assert(to_delete2); assert(no_change6); 
-    assert(to_delete3); assert(to_change==5); 
+    assert(no_change5);
+    assert(no_change6); 
+    assert(changed==5); 
 
-    /*assert(to_add1);*/assert(to_change==6); 
-    /*assert(to_add2);*/assert(no_change7); 
-    assert(to_change==7); /*assert(to_add2);*/
-    assert(no_change8); /*assert(to_add3);*/
+    assert(to_add1);assert(changed==6); 
+    assert(to_add2);assert(no_change7); 
+    assert(changed==7); assert(to_add2);
+    assert(no_change8); assert(to_add3);
 
     assert(a); assert(b); assert(c); assert(d); assert(e); assert(f); assert(g);
 
